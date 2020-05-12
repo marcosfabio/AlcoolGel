@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="_styles/style.css">
+
+    <title> Álcool Gel 1.0 </title>
+
+</head>
+
+<body>
+    
+
+    <div id="banner">
+        <p>Produção de Álcool Gel</p>
+    </div>   
+    
+    <div id="main">
+
+        <div id="receita">
+            
+            <header> Receita </header>
+            
+            <div class="tabela">
+
+                <div class="rotulos">
+                    <p> <label for="inpINPM"><sup>o</sup>INPM Desejado: </label>    </p>
+                    <p>  <label for="inpGLEstoque"><sup>o</sup>GL Etanol Estoque: </label>   </p>
+                    <p>  <label for="inpEspessante">% m/m do Espessante: </label>   </p>
+                    <p>  <label for="inpAlcalinizante">% m/m do Alcalinizante: </label>   </p>
+                    <p>  <label for="inpGlicerina">% m/m da Glicerina: </label>   </p>
+                    <p>  <label for="inpPropilenoglicol">% m/m do Propilenoglicol: </label>   </p>
+                </div>
+                
+                <div class="entradas">
+                    <p> <input type="number" name="nINPM" id="inpINPM" min="70" max="100" onchange="mudaValor()"> </p>
+        
+                    <p> <input type="number" name="nGLEstoque" id="inpGLEstoque" onchange="mudaValor()" > </p>
+        
+                    <p> <input type="number" name="nEspessante" id="inpEspessante" onchange="mudaValor()"> </p>
+        
+                    <p> <input type="number" name="nAlcalinizante" id="inpAlcalinizante" onchange="mudaValor()"> </p>
+        
+                    <p> <input type="number" name="nGlicerina" id="inpGlicerina" onchange="mudaValor()"> </p>
+        
+                    <p> <input type="number" name="nPropilenoglicol" id="inpPropilenoglicol" onchange="mudaValor()"> </p>
+                    
+                </div>
+
+            </div>
+            
+
+        </div>
+
+
+        <div id="producao">
+            
+            <header> Produção </header>
+
+            <div class="tabela">
+
+                <div class="rotulos">
+                    <p> <label for="inpMassaTotal">Massa Total (kg): </label> </p> 
+                    <p> <label for="inpMassaEtanol">Massa de Etanol (kg): </label> </p> 
+                    <p> <label for="inpMassaEspessante">Massa de Espessante (kg): </label> </p>
+                    <p> <label for="inpMassaAlcalinizante">Massa de Alcalinizante (kg): </label> </p>
+                    <p> <label for="inpMassaGlicerina">Massa de Glicerina (kg): </label> </p>
+                    <p> <label for="inpMassaPropilenoglicol">Massa de Propilenoglicol (kg): </label> </p>
+                    <p> <label for="inpMassaAguaEstoque">Massa de Água da Solução Estoque (kg): </label> </p>
+                    <p> <label for="inpMassaAguaAlcalinizante">Massa de Água do Alcalinizante (kg): </label> </p>
+                    <p> <label for="inpMassaAguaAdicional">Massa de Água Adicional (kg): </label> </p>
+                    <p> <label for="inpVolumeSolucaoEstoque">Volume da Solucao Estoque (L): </label> </p>
+                </div>
+
+                <div class="entradas">
+                    <p> <input type="number" name="nMassaTotal" id="inpMassaTotal" min="0" onchange="mudaValor()"> </p> 
+                    <p> <input type="number" name="nMassaEtanol" id="inpMassaEtanol" readonly> </p> 
+                    <p> <input type="number" name="nMassaEspessante" id="inpMassaEspessante" readonly> </p> 
+                    <p> <input type="number" name="nMassaAlcalinizante" id="inpMassaAlcalinizante" readonly> </p> 
+                    <p> <input type="number" name="nMassaGlicerina" id="inpMassaGlicerina" readonly> </p> 
+                    <p> <input type="number" name="nMassaPropilenoglicol" id="inpMassaPropilenoglicol" readonly> </p> 
+                    <p> <input type="number" name="nMassaAguaEstoque" id="inpMassaAguaEstoque" readonly> </p> 
+                    <p> <input type="number" name="nMassaAguaAlcalinizante" id="inpMassaAguaAlcalinizante" readonly> </p> 
+                    <p> <input type="number" name="nMassaAguaAdicional" id="inpMassaAguaAdicional" readonly> </p> 
+                    <p> <input type="number" name="nVolumeSolucaoEstoque" id="inpVolumeSolucaoEstoque" readonly> </p> 
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
